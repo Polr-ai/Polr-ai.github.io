@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · Polar.ai</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero-band">
+<header class="wrap top">
+  <a href="./" class="brand" aria-label="Polar.ai"><img src="logo-white.svg" class="logo" alt="Polar.ai" width="138" height="28"></a>
+  <nav><button type="button" class="lang" id="lang" aria-label="Language">EN</button></nav>
+</header>
+</div>
+<main class="wrap doc">
+  <div lang="ko">
+    <h1>개인정보처리방침</h1>
+    <p>시행일 2026-11-22</p>
+    <h2>이 웹사이트</h2>
+    <p>이 회사 소개 페이지는 회원가입, 입력 양식, 쿠키, 방문 분석 도구를 쓰지 않으며 개인정보를 수집하지 않습니다. 언어 선택은 방문자 브라우저에만 저장됩니다. 페이지는 GitHub Pages에서 제공되며, GitHub가 접속 기록을 남길 수 있습니다.</p>
+    <h2>문의 메일</h2>
+    <p>보내 주신 메일의 주소와 내용은 답장과 문의 처리에만 쓰고, 처리가 끝나면 필요한 기간 뒤 삭제합니다. 제3자에게 제공하지 않습니다.</p>
+    <h2>각 서비스</h2>
+    <p>Polar.ai의 각 서비스가 개인정보를 다루게 되면 그 서비스의 개인정보처리방침을 따로 알립니다.</p>
+    <h2>연락처</h2>
+    <p><a href="mailto:rkrkrk0129@gmail.com">rkrkrk0129@gmail.com</a></p>
+  </div>
+  <div lang="en">
+    <h1>Privacy Policy</h1>
+    <p>Effective 2026-11-22</p>
+    <h2>This website</h2>
+    <p>This company page has no sign-up, forms, cookies or analytics, and collects no personal information. Your language choice is stored only in your browser. The page is served by GitHub Pages, which may keep access logs.</p>
+    <h2>Email</h2>
+    <p>If you email us, we use your address and message only to reply and handle your request, delete them after that, and never share them with third parties.</p>
+    <h2>Our services</h2>
+    <p>Each Polar.ai service that handles personal information will publish its own privacy policy.</p>
+    <h2>Contact</h2>
+    <p><a href="mailto:rkrkrk0129@gmail.com">rkrkrk0129@gmail.com</a></p>
+  </div>
+</main>
+<footer class="foot-band"><div class="wrap foot"><img src="logo-white.svg" class="logo" alt="Polar.ai" width="118" height="24"><p>© 2026 Polar.ai · <a href="./">Polar.ai</a></p></div></footer>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('lang');
+  function set(l) {
+    root.dataset.lang = l; root.lang = l; btn.textContent = l === 'ko' ? 'EN' : '한국어';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  set(saved || (navigator.language && navigator.language.indexOf('ko') !== 0 ? 'en' : 'ko'));
+  btn.addEventListener('click', function () { set(root.dataset.lang === 'ko' ? 'en' : 'ko'); });
+})();
+</script>
+</body>
+</html>
